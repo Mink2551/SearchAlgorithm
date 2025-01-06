@@ -49,6 +49,7 @@ const fillValue = () => {
         fillTime++;
     } else if (fillTime == 1) {
         if (!isNaN(userInput.value)) {
+            display.value = "Enter the maximum number...";
             min = parseInt(userInput.value);
             fillTime++;
             check_new_value();
@@ -56,7 +57,6 @@ const fillValue = () => {
             display.value = "Please enter a valid number for the minimum!";
         }
     } else if (fillTime == 2) {
-        display.value = "Enter the maximum number...";
         if (!isNaN(userInput.value)) {
             max = parseInt(userInput.value);
             fillTime++;
