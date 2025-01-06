@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div class="display-box">
+            <textarea type="text" id="display-value" readonly> </textarea>
+        </div>
+        <div class="keys-zone">
+            <input type="text" readonly id="display">
+            <div class="keys">
+                <div class="layer-1 layer">
+                    <button class="btn" id="up"> Too much </button>
+                    <button class="btn" id="down"> Too low </button>
+                </div>
+                <div class="layer-2 layer">
+                    <div class="input-container">
+                        <input type="number" id="userInput">
+                        <button class="" onclick="fillValue()" id="Next">Next</button>
+                    </div>
+                </div>
+                <div class="layer-3 layer">
+                    <button class="btn" onclick="game()" id="correct">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
